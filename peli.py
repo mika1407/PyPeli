@@ -188,7 +188,6 @@ class Pyramid:
         self.ticker = 0
 
 class Tile:
-    # ... (Tile luokka ennallaan)
     def __init__(self, color: int):
         self.color = color
         self.highlight = tuple([c * 1.3 for c in self.color])
@@ -438,7 +437,7 @@ while True:
     if lives == 0:
 
         # --- UUSI SUURI FONTIN MÄÄRITYS ---
-        game_over_font = pygame.font.SysFont("Arial", 72)
+        game_over_font = pygame.font.SysFont("Arial", 52)
         
         current_score = score
         current_high = high
